@@ -1,0 +1,19 @@
+.capa img {
+  width: 100%;
+}
+
+button {
+  width: 110px;
+  height: 110px;
+  margin: 15px;
+  border-radius: 5px;
+  border: none;
+  background: #feabf2;
+  color: #689fb3;
+  font-size: 45px;
+  font-family: 'Chewy', cursive;
+}
+
+button:hover {
+  background: #b8456e;
+}

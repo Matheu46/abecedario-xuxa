@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+  </style>
+  <title>Abcedário da Xuxa</title>
+</head>
+
+<body>
+  <div class="capa">
+    <img src="capa.png" alt="">
+  </div>
+
+  <div class="alphabet">
+    <button>a</button><audio id="a" src="alfabeto/a.mp3"></audio>
+    <button>b</button><audio id="b" src="alfabeto/b.mp3"></audio>
+    <button>c</button><audio id="c" src="alfabeto/c.mp3"></audio>
+    <button>d</button><audio id="d" src="alfabeto/d.mp3"></audio>
+    <button>e</button><audio id="e" src="alfabeto/e.mp3"></audio>
+    <button>f</button><audio id="f" src="alfabeto/f.mp3"></audio>
+    <button>g</button><audio id="g" src="alfabeto/g.mp3"></audio>
+    <button>h</button><audio id="h" src="alfabeto/h.mp3"></audio>
+    <button>i</button><audio id="i" src="alfabeto/i.mp3"></audio>
+    <button>j</button><audio id="j" src="alfabeto/j.mp3"></audio>
+    <button>l</button><audio id="l" src="alfabeto/l.mp3"></audio>
+    <button>m</button><audio id="m" src="alfabeto/m.mp3"></audio>
+    <button>n</button><audio id="n" src="alfabeto/n.mp3"></audio>
+    <button>o</button><audio id="o" src="alfabeto/o.mp3"></audio>
+    <button>p</button><audio id="p" src="alfabeto/p.mp3"></audio>
+    <button>q</button><audio id="q" src="alfabeto/q.mp3"></audio>
+    <button>r</button><audio id="r" src="alfabeto/r.mp3"></audio>
+    <button>s</button><audio id="s" src="alfabeto/s.mp3"></audio>
+    <button>t</button><audio id="t" src="alfabeto/t.mp3"></audio>
+    <button>u</button><audio id="u" src="alfabeto/u.mp3"></audio>
+    <button>v</button><audio id="v" src="alfabeto/v.mp3"></audio>
+    <button>x</button><audio id="x" src="alfabeto/x.mp3"></audio>
+    <button>z</button><audio id="z" src="alfabeto/z.mp3"></audio>
+  </div>
+
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="mousetrap.min.js"></script>
+  <script type="text/javascript">
+
+    $('button').on('click', function () {
+      var next = $(this).next().attr('id'),
+        sound = document.getElementById(next);
+      sound.play();
+    });
+
+    Mousetrap.bind('a', function () { document.getElementById('a').play(); });
+    Mousetrap.bind('b', function () { document.getElementById('b').play(); });
+    Mousetrap.bind('c', function () { document.getElementById('c').play(); });
+    Mousetrap.bind('d', function () { document.getElementById('d').play(); });
+    Mousetrap.bind('e', function () { document.getElementById('e').play(); });
+    Mousetrap.bind('f', function () { document.getElementById('f').play(); });
+    Mousetrap.bind('g', function () { document.getElementById('g').play(); });
+    Mousetrap.bind('h', function () { document.getElementById('h').play(); });
+    Mousetrap.bind('i', function () { document.getElementById('i').play(); });
+    Mousetrap.bind('j', function () { document.getElementById('j').play(); });
+    Mousetrap.bind('k', function () { document.getElementById('k').play(); });
+    Mousetrap.bind('l', function () { document.getElementById('l').play(); });
+    Mousetrap.bind('m', function () { document.getElementById('m').play(); });
+    Mousetrap.bind('n', function () { document.getElementById('n').play(); });
+    Mousetrap.bind('o', function () { document.getElementById('o').play(); });
+    Mousetrap.bind('p', function () { document.getElementById('p').play(); });
+    Mousetrap.bind('q', function () { document.getElementById('q').play(); });
+    Mousetrap.bind('r', function () { document.getElementById('r').play(); });
+    Mousetrap.bind('s', function () { document.getElementById('s').play(); });
+    Mousetrap.bind('t', function () { document.getElementById('t').play(); });
+    Mousetrap.bind('u', function () { document.getElementById('u').play(); });
+    Mousetrap.bind('v', function () { document.getElementById('v').play(); });
+    Mousetrap.bind('w', function () { document.getElementById('w').play(); });
+    Mousetrap.bind('x', function () { document.getElementById('x').play(); });
+    Mousetrap.bind('y', function () { document.getElementById('y').play(); });
+    Mousetrap.bind('z', function () { document.getElementById('z').play(); });
+
+  </script>
+</body>
+
+</html>
